@@ -1,9 +1,12 @@
+
 import type { MetadataRoute } from "next";
+
+const SITE_URL = "https://app.africasuk.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://app.africasuk.com/",
+      url: `${SITE_URL}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,

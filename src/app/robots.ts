@@ -1,4 +1,7 @@
+
 import type { MetadataRoute } from "next";
+
+const SITE_URL = "https://app.africasuk.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://app.africasuk.com/sitemap.xml",
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }
